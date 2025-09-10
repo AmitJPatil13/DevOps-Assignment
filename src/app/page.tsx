@@ -16,15 +16,17 @@ export default function Home() {
   return (
     <div className="relative">
       <Navbar />
-      <div className="relative min-h-[90dvh] flex items-center">
+      <div className="relative pt-24 md:pt-32">
         <FuturisticParticles />
-        <Section className="pt-28 pb-20">
+        <Section className="pt-10 md:pt-12 pb-20">
           <div className="space-y-6">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-xs">
               <span className="h-2 w-2 rounded-full bg-emerald-400" /> Available for opportunities
             </span>
             <h1 className="text-4xl md:text-6xl font-semibold leading-tight">
-              {bio.name}
+              <span className="bg-gradient-to-br from-indigo-600 via-emerald-500 to-fuchsia-600 bg-clip-text text-transparent">
+                {bio.name}
+              </span>
             </h1>
             <p className="text-lg text-zinc-600 dark:text-zinc-300 max-w-xl">
               {bio.tagline} — {bio.summary}
@@ -50,10 +52,13 @@ export default function Home() {
 
       <footer className="py-12 border-t border-zinc-200/50 dark:border-zinc-800/50">
         <Section className="flex items-center justify-between">
-          <p className="text-sm text-zinc-500">© {new Date().getFullYear()} Ajay Patil</p>
+          <p className="text-sm text-zinc-500">© {new Date().getFullYear()} Amit Patil</p>
           <a href="#" className="text-sm hover:opacity-80">Back to top ↑</a>
         </Section>
       </footer>
+      {/* Floating scroll-to-top */}
+      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+      
     </div>
   );
 }

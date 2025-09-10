@@ -108,7 +108,7 @@ export const projects: Project[] = [
       "Recharts",
       "Zod",
     ],
-    live: "#",
+    live: "https://fpms-smoky.vercel.app/",
     code: "#",
   },
   {
@@ -126,7 +126,7 @@ export const projects: Project[] = [
       "Hybrid collaborative and content-based recommendations with OpenAI integration; tested and deployed on Vercel.",
     image: "/file.svg",
     stack: ["React", "Node.js", "Flask", "OpenAI API", "Jest", "Vercel"],
-    live: "#",
+    live: "https://recommendation-system-rho-seven.vercel.app/",
     code: "#",
   },
 ];
