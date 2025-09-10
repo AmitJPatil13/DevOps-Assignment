@@ -60,3 +60,33 @@ body {
 .dark .glass {
   border-color: rgba(38, 38, 38, 0.6);
 }
+
+@keyframes blobFloat1 {
+  0% { transform: translate3d(0,0,0) scale(1); }
+  50% { transform: translate3d(20px,-30px,0) scale(1.05); }
+  100% { transform: translate3d(0,0,0) scale(1); }
+}
+
+@keyframes blobFloat2 {
+  0% { transform: translate3d(0,0,0) scale(1); }
+  50% { transform: translate3d(-25px,25px,0) scale(0.98); }
+  100% { transform: translate3d(0,0,0) scale(1); }
+}
+
+@keyframes blobFloat3 {
+  0% { transform: translate3d(0,0,0) scale(1); }
+  50% { transform: translate3d(30px,15px,0) scale(1.03); }
+  100% { transform: translate3d(0,0,0) scale(1); }
+}
+
+.mesh-blob {
+  position: absolute;
+  border-radius: 9999px;
+  filter: blur(40px);
+  opacity: 0.32;
+  mix-blend-mode: screen;
+}
+
+.mesh-blob--1 { animation: blobFloat1 18s ease-in-out infinite; }
+.mesh-blob--2 { animation: blobFloat2 22s ease-in-out infinite; }
+.mesh-blob--3 { animation: blobFloat3 26s ease-in-out infinite; }
