@@ -1,3 +1,4 @@
+"use client";
 import { Section } from "@/components/section";
 import { bio, strengths, quickFacts } from "@/data/content";
 import { motion } from "framer-motion";

@@ -1,3 +1,4 @@
+"use client";
 import { Section } from "@/components/section";
 import { projects } from "@/data/content";
 import Image from "next/image";
