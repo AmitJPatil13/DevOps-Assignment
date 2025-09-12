@@ -34,6 +34,13 @@ html, body {
   height: 100%;
 }
 
+/* Ensure global particles canvas sits behind content and doesn't block events */
+#tsparticles {
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+}
+
 body {
   background: rgb(var(--background));
   color: rgb(var(--foreground));

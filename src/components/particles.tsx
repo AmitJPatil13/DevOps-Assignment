@@ -11,15 +11,14 @@ export function FuturisticParticles() {
   }, []);
 
   return (
-    <div className="pointer-events-none absolute inset-0 z-0">
+    <div className="pointer-events-none">
       {/* Interactive particles */}
       <Particles
         id="tsparticles"
         init={init}
-        className="absolute inset-0"
         options={{
           background: { color: { value: "transparent" } },
-          fullScreen: { enable: false },
+          fullScreen: { enable: true, zIndex: 0 },
           fpsLimit: 60,
           detectRetina: true,
           interactivity: {
