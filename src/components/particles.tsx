@@ -41,7 +41,7 @@ export function FuturisticParticles() {
           },
           particles: {
             number: { value: 55, density: { enable: true, area: 900 } },
-            color: { value: ["#8b93ff", "#22d3ee", "#34d399"] },
+            color: { value: ["#f59e0b", "#f43f5e", "#38bdf8"] },
             links: {
               enable: true,
               color: "#334155",
@@ -58,7 +58,7 @@ export function FuturisticParticles() {
               outModes: { default: "out" },
               random: true,
             },
-            opacity: { value: 0.35, animation: { enable: true, speed: 0.5, minimumValue: 0.12, sync: false } },
+            opacity: { value: 0.3, animation: { enable: true, speed: 0.5, minimumValue: 0.12, sync: false } },
             size: {
               value: { min: 0.8, max: 2.6 },
               animation: { enable: true, speed: 1.8, minimumValue: 0.5, sync: false },
