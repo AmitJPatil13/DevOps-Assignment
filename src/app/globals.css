@@ -9,11 +9,12 @@
 }
 
 .dark {
-  --background: 10 10 10;
-  --foreground: 237 237 237;
-  --muted: 24 24 27;
-  --card: 12 12 12;
-  --border: 38 38 38;
+  /* Refined dark palette */
+  --background: 12 14 18; /* near-black with a hint of blue */
+  --foreground: 232 234 237; /* soft white */
+  --muted: 20 23 28; /* panels */
+  --card: 16 18 23; /* cards */
+  --border: 36 42 50; /* subtle cool border */
 }
 
 @theme inline {
@@ -42,10 +43,10 @@ body {
 .glass {
   background: linear-gradient(
       135deg,
-      rgba(255, 255, 255, 0.08) 0%,
+      rgba(255, 255, 255, 0.06) 0%,
       rgba(255, 255, 255, 0.02) 100%
     );
-  border: 1px solid rgba(228, 228, 231, 0.35);
+  border: 1px solid rgba(148, 163, 184, 0.18);
   backdrop-filter: blur(12px);
 }
 
@@ -54,7 +55,7 @@ body {
 }
 
 .dark .glass {
-  border-color: rgba(38, 38, 38, 0.6);
+  border-color: rgba(36, 42, 50, 0.6);
 }
 
 @keyframes blobFloat1 {

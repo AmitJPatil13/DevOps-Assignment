@@ -11,12 +11,7 @@ export function FuturisticParticles() {
   }, []);
 
   return (
-    <div className="absolute inset-0 -z-10">
-      {/* Mesh gradient blobs */}
-      <div className="mesh-blob mesh-blob--1" style={{ top: "-10%", left: "-5%", width: 320, height: 320, background: "radial-gradient(closest-side, rgba(129,140,248,0.5), transparent)" }} />
-      <div className="mesh-blob mesh-blob--2" style={{ bottom: "-8%", right: "-6%", width: 360, height: 360, background: "radial-gradient(closest-side, rgba(52,211,153,0.45), transparent)" }} />
-      <div className="mesh-blob mesh-blob--3" style={{ top: "20%", right: "15%", width: 280, height: 280, background: "radial-gradient(closest-side, rgba(244,114,182,0.45), transparent)" }} />
-
+    <div className="pointer-events-none absolute inset-0 z-0">
       {/* Interactive particles */}
       <Particles
         id="tsparticles"
@@ -46,11 +41,11 @@ export function FuturisticParticles() {
           },
           particles: {
             number: { value: 55, density: { enable: true, area: 900 } },
-            color: { value: ["#818CF8", "#34D399", "#F472B6", "#22D3EE"] },
+            color: { value: ["#8b93ff", "#22d3ee", "#34d399"] },
             links: {
               enable: true,
-              color: "#475569",
-              opacity: 0.22,
+              color: "#334155",
+              opacity: 0.18,
               distance: 135,
               width: 1,
             },
@@ -63,10 +58,7 @@ export function FuturisticParticles() {
               outModes: { default: "out" },
               random: true,
             },
-            opacity: {
-              value: 0.42,
-              animation: { enable: true, speed: 0.55, minimumValue: 0.15, sync: false },
-            },
+            opacity: { value: 0.35, animation: { enable: true, speed: 0.5, minimumValue: 0.12, sync: false } },
             size: {
               value: { min: 0.8, max: 2.6 },
               animation: { enable: true, speed: 1.8, minimumValue: 0.5, sync: false },
