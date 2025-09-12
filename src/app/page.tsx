@@ -3,7 +3,7 @@ import { FuturisticParticles } from "@/components/particles";
 import { Navbar } from "@/components/navbar";
 import { Section } from "@/components/section";
 import { bio, socials } from "@/data/content";
-import { motion } from "framer-motion";
+// import { motion } from "framer-motion";
 import Link from "next/link";
 import { AboutSection } from "@/components/sections/about";
 import { SkillsSection } from "@/components/sections/skills";
@@ -57,7 +57,6 @@ export default function Home() {
         </Section>
       </footer>
       {/* Floating scroll-to-top */}
-      {/* eslint-disable-next-line @next/next/no-sync-scripts */}
       
     </div>
   );

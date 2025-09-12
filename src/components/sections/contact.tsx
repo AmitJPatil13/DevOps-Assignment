@@ -19,7 +19,7 @@ export function ContactSection() {
   const { register, handleSubmit, reset, formState: { errors, isSubmitting } } = useForm<FormValues>({ resolver: zodResolver(schema) });
   const [copied, setCopied] = useState(false);
 
-  const onSubmit = async (data: FormValues) => {
+  const onSubmit = async (_data: FormValues) => {
     // placeholder: integrate with API/email service
     await new Promise((r) => setTimeout(r, 800));
     reset();

@@ -156,7 +156,9 @@ export const timeline = [
   },
 ];
 
-export const testimonials = [];
+export type Testimonial = { quote: string; by: string };
+
+export const testimonials: Testimonial[] = [];
 
 export const socials = {
   github: "https://github.com/AmitJPatil13",
