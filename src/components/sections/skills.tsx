@@ -1,15 +1,14 @@
 "use client";
 import { Section } from "@/components/section";
 import { skills } from "@/data/content";
-import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, Radar, BarChart, Bar, XAxis, YAxis } from "recharts";
+import { ResponsiveContainer, RadarChart, PolarGrid, PolarAngleAxis, Radar } from "recharts";
 
 export function SkillsSection() {
   const radarData = skills[0].items.map((s) => ({ subject: s.name, A: s.level }));
-  const barData = skills.flatMap((c) => c.items.map((i) => ({ name: i.name, level: i.level })));
   return (
     <Section id="skills" className="py-20">
       <h2 className="text-3xl font-semibold mb-8">Skills</h2>
-      <div className="grid lg:grid-cols-2 gap-10 items-start">
+      <div className="grid gap-10 items-start">
         <div className="glass rounded-xl p-6">
           <div className="h-72">
             <ResponsiveContainer width="100%" height="100%">
@@ -18,17 +17,6 @@ export function SkillsSection() {
                 <PolarAngleAxis dataKey="subject" tick={{ fill: "#a1a1aa", fontSize: 12 }} />
                 <Radar dataKey="A" stroke="#818cf8" fill="#818cf8" fillOpacity={0.4} />
               </RadarChart>
-            </ResponsiveContainer>
-          </div>
-        </div>
-        <div className="glass rounded-xl p-6">
-          <div className="h-72">
-            <ResponsiveContainer width="100%" height="100%">
-              <BarChart data={barData}>
-                <XAxis dataKey="name" tick={{ fill: "#a1a1aa", fontSize: 12 }} />
-                <YAxis tick={{ fill: "#a1a1aa", fontSize: 12 }} domain={[0, 100]} />
-                <Bar dataKey="level" fill="#34d399" radius={[6, 6, 0, 0]} />
-              </BarChart>
             </ResponsiveContainer>
           </div>
         </div>
