@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { ThemeProvider } from "next-themes";
 import "./globals.css";
 import { ScrollToTopButton } from "@/components/scroll-to-top";
+import { FuturisticParticles } from "@/components/particles";
 
 const inter = Inter({ variable: "--font-sans", subsets: ["latin"] });
 
@@ -52,7 +53,12 @@ export default function RootLayout({
     <html lang="en" suppressHydrationWarning className="dark">
       <body className={`${inter.variable} antialiased min-h-dvh bg-background text-foreground`}>
         <ThemeProvider attribute="class" forcedTheme="dark" disableTransitionOnChange>
-          {children}
+          <div className="relative">
+            <FuturisticParticles />
+            <div className="relative z-10">
+              {children}
+            </div>
+          </div>
           <ScrollToTopButton />
         </ThemeProvider>
       </body>

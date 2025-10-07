@@ -1,0 +1,17 @@
+node_modules
+npm-debug.log
+.next/cache
+.next/trace
+.next/types
+.git
+.gitignore
+Dockerfile*
+.dockerignore
+.env*
+.vscode
+**/*.swp
+**/*.log
+coverage
+README.md
+prev_portfolio.html
+

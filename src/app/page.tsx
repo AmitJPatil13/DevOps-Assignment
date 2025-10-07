@@ -17,7 +17,6 @@ export default function Home() {
     <div className="relative">
       <Navbar />
       <div className="relative pt-24 md:pt-32">
-        <FuturisticParticles />
         <Section className="pt-10 md:pt-12 pb-20">
           <div className="space-y-6">
             <span className="inline-flex items-center gap-2 px-3 py-1 rounded-full glass text-xs">
