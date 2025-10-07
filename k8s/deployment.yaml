@@ -16,7 +16,7 @@ spec:
     spec:
       containers:
         - name: portfolio
-          image: ghcr.io/OWNER/REPO:latest # replace via kustomize or kubectl set image
+          image: ghcr.io/AmitJPatil13/DevOps-Assignment:latest # replace via kustomize or kubectl set image
           imagePullPolicy: IfNotPresent
           ports:
             - containerPort: 3000
